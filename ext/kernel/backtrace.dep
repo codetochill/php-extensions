@@ -1,0 +1,2 @@
+kernel/backtrace.lo: \
+  /Users/hello/Projects/php-extensions/utils/ext/kernel/backtrace.c

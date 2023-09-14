@@ -1,0 +1,235 @@
+[
+    {
+        "type": "namespace",
+        "name": "Utils",
+        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+        "line": 3,
+        "char": 5
+    },
+    {
+        "type": "class",
+        "name": "Encoder",
+        "abstract": 0,
+        "final": 0,
+        "definition": {
+            "methods": [
+                {
+                    "visibility": [
+                        "public",
+                        "static"
+                    ],
+                    "type": "method",
+                    "name": "encode",
+                    "parameters": [
+                        {
+                            "type": "parameter",
+                            "name": "text",
+                            "const": 0,
+                            "data-type": "variable",
+                            "mandatory": 0,
+                            "reference": 0,
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                            "line": 5,
+                            "char": 43
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "type": "if",
+                            "expr": {
+                                "type": "not-equals",
+                                "left": {
+                                    "type": "fcall",
+                                    "name": "strlen",
+                                    "call-type": 1,
+                                    "parameters": [
+                                        {
+                                            "parameter": {
+                                                "type": "variable",
+                                                "value": "text",
+                                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                "line": 7,
+                                                "char": 23
+                                            },
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                            "line": 7,
+                                            "char": 23
+                                        }
+                                    ],
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                    "line": 7,
+                                    "char": 26
+                                },
+                                "right": {
+                                    "type": "int",
+                                    "value": "0",
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                    "line": 8,
+                                    "char": 9
+                                },
+                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                "line": 8,
+                                "char": 9
+                            },
+                            "statements": [
+                                {
+                                    "type": "if",
+                                    "expr": {
+                                        "type": "fcall",
+                                        "name": "function_exists",
+                                        "call-type": 1,
+                                        "parameters": [
+                                            {
+                                                "parameter": {
+                                                    "type": "string",
+                                                    "value": "my_custom_encoder",
+                                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                    "line": 9,
+                                                    "char": 49
+                                                },
+                                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                "line": 9,
+                                                "char": 49
+                                            }
+                                        ],
+                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                        "line": 9,
+                                        "char": 51
+                                    },
+                                    "statements": [
+                                        {
+                                            "type": "return",
+                                            "expr": {
+                                                "type": "fcall",
+                                                "name": "my_custom_encoder",
+                                                "call-type": 1,
+                                                "parameters": [
+                                                    {
+                                                        "parameter": {
+                                                            "type": "variable",
+                                                            "value": "text",
+                                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                            "line": 10,
+                                                            "char": 46
+                                                        },
+                                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                        "line": 10,
+                                                        "char": 46
+                                                    }
+                                                ],
+                                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                "line": 10,
+                                                "char": 47
+                                            },
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                            "line": 11,
+                                            "char": 13
+                                        }
+                                    ],
+                                    "else_statements": [
+                                        {
+                                            "type": "return",
+                                            "expr": {
+                                                "type": "fcall",
+                                                "name": "base64_encode",
+                                                "call-type": 1,
+                                                "parameters": [
+                                                    {
+                                                        "parameter": {
+                                                            "type": "variable",
+                                                            "value": "text",
+                                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                            "line": 12,
+                                                            "char": 42
+                                                        },
+                                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                        "line": 12,
+                                                        "char": 42
+                                                    }
+                                                ],
+                                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                                "line": 12,
+                                                "char": 43
+                                            },
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                            "line": 13,
+                                            "char": 13
+                                        }
+                                    ],
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                    "line": 14,
+                                    "char": 9
+                                }
+                            ],
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                            "line": 16,
+                            "char": 14
+                        },
+                        {
+                            "type": "return",
+                            "expr": {
+                                "type": "bool",
+                                "value": "false",
+                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                "line": 16,
+                                "char": 21
+                            },
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                            "line": 17,
+                            "char": 5
+                        }
+                    ],
+                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                    "line": 5,
+                    "last-line": 19,
+                    "char": 26
+                },
+                {
+                    "visibility": [
+                        "public"
+                    ],
+                    "type": "method",
+                    "name": "my_custom_encoder",
+                    "parameters": [
+                        {
+                            "type": "parameter",
+                            "name": "text",
+                            "const": 0,
+                            "data-type": "variable",
+                            "mandatory": 0,
+                            "reference": 0,
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                            "line": 19,
+                            "char": 47
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "type": "return",
+                            "expr": {
+                                "type": "string",
+                                "value": "base64_encode(text)",
+                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                                "line": 21,
+                                "char": 35
+                            },
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                            "line": 22,
+                            "char": 5
+                        }
+                    ],
+                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+                    "line": 19,
+                    "last-line": 23,
+                    "char": 19
+                }
+            ],
+            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+            "line": 3,
+            "char": 5
+        },
+        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/encoder.zep",
+        "line": 3,
+        "char": 5
+    }
+]

@@ -1,0 +1,334 @@
+[
+    {
+        "type": "namespace",
+        "name": "Utils",
+        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+        "line": 3,
+        "char": 5
+    },
+    {
+        "type": "class",
+        "name": "Greeting",
+        "abstract": 0,
+        "final": 0,
+        "definition": {
+            "methods": [
+                {
+                    "visibility": [
+                        "public",
+                        "static"
+                    ],
+                    "type": "method",
+                    "name": "say",
+                    "statements": [
+                        {
+                            "type": "echo",
+                            "expressions": [
+                                {
+                                    "type": "string",
+                                    "value": "hello world!",
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                    "line": 8,
+                                    "char": 26
+                                }
+                            ],
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                            "line": 9,
+                            "char": 5
+                        }
+                    ],
+                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                    "line": 6,
+                    "last-line": 11,
+                    "char": 26
+                },
+                {
+                    "visibility": [
+                        "public",
+                        "static"
+                    ],
+                    "type": "method",
+                    "name": "binaryToHex",
+                    "parameters": [
+                        {
+                            "type": "parameter",
+                            "name": "s",
+                            "const": 0,
+                            "data-type": "string",
+                            "mandatory": 1,
+                            "reference": 0,
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                            "line": 11,
+                            "char": 49
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "type": "declare",
+                            "data-type": "variable",
+                            "variables": [
+                                {
+                                    "variable": "o",
+                                    "expr": {
+                                        "type": "string",
+                                        "value": "",
+                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                        "line": 13,
+                                        "char": 17
+                                    },
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                    "line": 13,
+                                    "char": 17
+                                },
+                                {
+                                    "variable": "n",
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                    "line": 13,
+                                    "char": 20
+                                }
+                            ],
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                            "line": 13,
+                            "char": 25
+                        },
+                        {
+                            "type": "declare",
+                            "data-type": "char",
+                            "variables": [
+                                {
+                                    "variable": "ch",
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                    "line": 13,
+                                    "char": 29
+                                }
+                            ],
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                            "line": 15,
+                            "char": 11
+                        },
+                        {
+                            "type": "for",
+                            "expr": {
+                                "type": "fcall",
+                                "name": "range",
+                                "call-type": 1,
+                                "parameters": [
+                                    {
+                                        "parameter": {
+                                            "type": "int",
+                                            "value": "0",
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                            "line": 15,
+                                            "char": 26
+                                        },
+                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                        "line": 15,
+                                        "char": 26
+                                    },
+                                    {
+                                        "parameter": {
+                                            "type": "mcall",
+                                            "variable": {
+                                                "type": "variable",
+                                                "value": "s",
+                                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                "line": 15,
+                                                "char": 30
+                                            },
+                                            "name": "length",
+                                            "call-type": 1,
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                            "line": 15,
+                                            "char": 39
+                                        },
+                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                        "line": 15,
+                                        "char": 39
+                                    }
+                                ],
+                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                "line": 15,
+                                "char": 41
+                            },
+                            "value": "ch",
+                            "reverse": 0,
+                            "statements": [
+                                {
+                                    "type": "let",
+                                    "assignments": [
+                                        {
+                                            "assign-type": "variable",
+                                            "operator": "assign",
+                                            "variable": "n",
+                                            "expr": {
+                                                "type": "mcall",
+                                                "variable": {
+                                                    "type": "variable",
+                                                    "value": "ch",
+                                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                    "line": 16,
+                                                    "char": 24
+                                                },
+                                                "name": "toHex",
+                                                "call-type": 1,
+                                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                "line": 16,
+                                                "char": 32
+                                            },
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                            "line": 16,
+                                            "char": 32
+                                        }
+                                    ],
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                    "line": 17,
+                                    "char": 14
+                                },
+                                {
+                                    "type": "if",
+                                    "expr": {
+                                        "type": "less",
+                                        "left": {
+                                            "type": "mcall",
+                                            "variable": {
+                                                "type": "variable",
+                                                "value": "n",
+                                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                "line": 17,
+                                                "char": 18
+                                            },
+                                            "name": "length",
+                                            "call-type": 1,
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                            "line": 17,
+                                            "char": 28
+                                        },
+                                        "right": {
+                                            "type": "int",
+                                            "value": "2",
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                            "line": 17,
+                                            "char": 32
+                                        },
+                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                        "line": 17,
+                                        "char": 32
+                                    },
+                                    "statements": [
+                                        {
+                                            "type": "let",
+                                            "assignments": [
+                                                {
+                                                    "assign-type": "variable",
+                                                    "operator": "concat-assign",
+                                                    "variable": "o",
+                                                    "expr": {
+                                                        "type": "concat",
+                                                        "left": {
+                                                            "type": "string",
+                                                            "value": "0",
+                                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                            "line": 18,
+                                                            "char": 27
+                                                        },
+                                                        "right": {
+                                                            "type": "variable",
+                                                            "value": "n",
+                                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                            "line": 18,
+                                                            "char": 30
+                                                        },
+                                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                        "line": 18,
+                                                        "char": 30
+                                                    },
+                                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                    "line": 18,
+                                                    "char": 30
+                                                }
+                                            ],
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                            "line": 19,
+                                            "char": 13
+                                        }
+                                    ],
+                                    "else_statements": [
+                                        {
+                                            "type": "let",
+                                            "assignments": [
+                                                {
+                                                    "assign-type": "variable",
+                                                    "operator": "concat-assign",
+                                                    "variable": "o",
+                                                    "expr": {
+                                                        "type": "variable",
+                                                        "value": "n",
+                                                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                        "line": 20,
+                                                        "char": 26
+                                                    },
+                                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                                    "line": 20,
+                                                    "char": 26
+                                                }
+                                            ],
+                                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                            "line": 21,
+                                            "char": 13
+                                        }
+                                    ],
+                                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                    "line": 22,
+                                    "char": 9
+                                }
+                            ],
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                            "line": 23,
+                            "char": 14
+                        },
+                        {
+                            "type": "return",
+                            "expr": {
+                                "type": "variable",
+                                "value": "o",
+                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                "line": 23,
+                                "char": 17
+                            },
+                            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                            "line": 24,
+                            "char": 5
+                        }
+                    ],
+                    "return-type": {
+                        "type": "return-type",
+                        "list": [
+                            {
+                                "type": "return-type-parameter",
+                                "data-type": "string",
+                                "mandatory": 0,
+                                "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                                "line": 12,
+                                "char": 5
+                            }
+                        ],
+                        "void": 0,
+                        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                        "line": 12,
+                        "char": 5
+                    },
+                    "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+                    "line": 11,
+                    "last-line": 26,
+                    "char": 26
+                }
+            ],
+            "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+            "line": 3,
+            "char": 5
+        },
+        "file": "\/Users\/hello\/Projects\/php-extensions\/utils\/utils\/greeting.zep",
+        "line": 3,
+        "char": 5
+    }
+]

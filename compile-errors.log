@@ -1,0 +1,59 @@
+/Users/hello/Projects/php-extensions/utils/ext/kernel/main.c:285:101: warning: comparison between pointer and integer ('bool' and 'void *') [-Wpointer-integer-compare]
+        if (zend_hash_str_exists(CG(function_table), Z_STRVAL_P(function_name), Z_STRLEN_P(function_name)) != NULL) {
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/Users/hello/Projects/php-extensions/utils/ext/kernel/main.c:301:76: warning: comparison between pointer and integer ('bool' and 'void *') [-Wpointer-integer-compare]
+        if (zend_hash_str_exists(CG(function_table), function_name, function_len) != NULL) {
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+2 warnings generated.
+/Users/hello/Projects/php-extensions/utils/ext/kernel/array.c:507:67: warning: format specifies type 'long' but the argument has type 'zend_ulong' (aka 'unsigned long long') [-Wformat]
+                                zend_error(E_NOTICE, "Undefined index: %ld in %s on line %d", uidx, file, line);
+                                                                       ~~~                    ^~~~
+                                                                       %llu
+1 warning generated.
+/Users/hello/Projects/php-extensions/utils/ext/kernel/require.c:54:19: warning: incompatible pointer types passing 'zend_string *' (aka 'struct _zend_string *') to parameter of type 'zval *' (aka 'struct _zval_struct *') [-Wincompatible-pointer-types]
+    zval_ptr_dtor(zend_string_path);
+                  ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/php/8.2.10/include/php/Zend/zend_variables.h:79:35: note: passing argument to parameter 'zval_ptr' here
+ZEND_API void zval_ptr_dtor(zval *zval_ptr);
+                                  ^
+/Users/hello/Projects/php-extensions/utils/ext/kernel/require.c:127:19: warning: incompatible pointer types passing 'zend_string *' (aka 'struct _zend_string *') to parameter of type 'zval *' (aka 'struct _zval_struct *') [-Wincompatible-pointer-types]
+    zval_ptr_dtor(zend_string_path);
+                  ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/php/8.2.10/include/php/Zend/zend_variables.h:79:35: note: passing argument to parameter 'zval_ptr' here
+ZEND_API void zval_ptr_dtor(zval *zval_ptr);
+                                  ^
+2 warnings generated.
+/Users/hello/Projects/php-extensions/utils/ext/kernel/file.c:71:16: warning: incompatible pointer types passing 'zend_string *' (aka 'struct _zend_string *') to parameter of type 'zval *' (aka 'struct _zval_struct *') [-Wincompatible-pointer-types]
+        zval_ptr_dtor(file);
+                      ^~~~
+/opt/homebrew/Cellar/php/8.2.10/include/php/Zend/zend_variables.h:79:35: note: passing argument to parameter 'zval_ptr' here
+ZEND_API void zval_ptr_dtor(zval *zval_ptr);
+                                  ^
+/Users/hello/Projects/php-extensions/utils/ext/kernel/file.c:179:74: warning: format specifies type 'int' but the argument has type 'zend_long' (aka 'long long') [-Wformat]
+                php_error_docref(NULL, E_WARNING, "%d is not a valid stream resource", stream->res->handle);
+                                                   ~~                                  ^~~~~~~~~~~~~~~~~~~
+                                                   %lld
+/Users/hello/Projects/php-extensions/utils/ext/kernel/file.c:300:17: warning: incompatible pointer types passing 'zend_string *' (aka 'struct _zend_string *') to parameter of type 'zval *' (aka 'struct _zval_struct *') [-Wincompatible-pointer-types]
+                zval_ptr_dtor(file);
+                              ^~~~
+/opt/homebrew/Cellar/php/8.2.10/include/php/Zend/zend_variables.h:79:35: note: passing argument to parameter 'zval_ptr' here
+ZEND_API void zval_ptr_dtor(zval *zval_ptr);
+                                  ^
+3 warnings generated.
+/Users/hello/Projects/php-extensions/utils/ext/utils/greeting.zep.c:62:3: warning: incompatible pointer types passing 'zval *' (aka 'struct _zval_struct *') to parameter of type 'zend_string **' (aka 'struct _zend_string **') [-Wincompatible-pointer-types]
+                Z_PARAM_STR(s)
+                ^~~~~~~~~~~~~~
+/opt/homebrew/Cellar/php/8.2.10/include/php/Zend/zend_API.h:1950:2: note: expanded from macro 'Z_PARAM_STR'
+        Z_PARAM_STR_EX(dest, 0, 0)
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/php/8.2.10/include/php/Zend/zend_API.h:1943:44: note: expanded from macro 'Z_PARAM_STR_EX'
+                if (UNEXPECTED(!zend_parse_arg_str(_arg, &dest, check_null, _i))) { \
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/php/8.2.10/include/php/Zend/zend_portability.h:364:52: note: expanded from macro 'UNEXPECTED'
+# define UNEXPECTED(condition) __builtin_expect(!!(condition), 0)
+                                                   ^~~~~~~~~
+/opt/homebrew/Cellar/php/8.2.10/include/php/Zend/zend_API.h:2112:76: note: passing argument to parameter 'dest' here
+static zend_always_inline bool zend_parse_arg_str(zval *arg, zend_string **dest, bool check_null, uint32_t arg_num)
+                                                                           ^
+1 warning generated.
+warning: no debug symbols in executable (-arch arm64)

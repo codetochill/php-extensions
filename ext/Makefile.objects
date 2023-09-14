@@ -1,0 +1,72 @@
+-include utils.dep
+utils.lo: /Users/hello/Projects/php-extensions/utils/ext/utils.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/utils.c -o utils.lo  -MMD -MF utils.dep -MT utils.lo
+-include kernel/main.dep
+kernel/main.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/main.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/main.c -o kernel/main.lo  -MMD -MF kernel/main.dep -MT kernel/main.lo
+-include kernel/memory.dep
+kernel/memory.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/memory.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/memory.c -o kernel/memory.lo  -MMD -MF kernel/memory.dep -MT kernel/memory.lo
+-include kernel/exception.dep
+kernel/exception.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/exception.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/exception.c -o kernel/exception.lo  -MMD -MF kernel/exception.dep -MT kernel/exception.lo
+-include kernel/debug.dep
+kernel/debug.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/debug.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/debug.c -o kernel/debug.lo  -MMD -MF kernel/debug.dep -MT kernel/debug.lo
+-include kernel/backtrace.dep
+kernel/backtrace.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/backtrace.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/backtrace.c -o kernel/backtrace.lo  -MMD -MF kernel/backtrace.dep -MT kernel/backtrace.lo
+-include kernel/object.dep
+kernel/object.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/object.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/object.c -o kernel/object.lo  -MMD -MF kernel/object.dep -MT kernel/object.lo
+-include kernel/array.dep
+kernel/array.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/array.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/array.c -o kernel/array.lo  -MMD -MF kernel/array.dep -MT kernel/array.lo
+-include kernel/string.dep
+kernel/string.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/string.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/string.c -o kernel/string.lo  -MMD -MF kernel/string.dep -MT kernel/string.lo
+-include kernel/fcall.dep
+kernel/fcall.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/fcall.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/fcall.c -o kernel/fcall.lo  -MMD -MF kernel/fcall.dep -MT kernel/fcall.lo
+-include kernel/require.dep
+kernel/require.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/require.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/require.c -o kernel/require.lo  -MMD -MF kernel/require.dep -MT kernel/require.lo
+-include kernel/file.dep
+kernel/file.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/file.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/file.c -o kernel/file.lo  -MMD -MF kernel/file.dep -MT kernel/file.lo
+-include kernel/operators.dep
+kernel/operators.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/operators.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/operators.c -o kernel/operators.lo  -MMD -MF kernel/operators.dep -MT kernel/operators.lo
+-include kernel/math.dep
+kernel/math.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/math.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/math.c -o kernel/math.lo  -MMD -MF kernel/math.dep -MT kernel/math.lo
+-include kernel/concat.dep
+kernel/concat.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/concat.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/concat.c -o kernel/concat.lo  -MMD -MF kernel/concat.dep -MT kernel/concat.lo
+-include kernel/variables.dep
+kernel/variables.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/variables.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/variables.c -o kernel/variables.lo  -MMD -MF kernel/variables.dep -MT kernel/variables.lo
+-include kernel/filter.dep
+kernel/filter.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/filter.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/filter.c -o kernel/filter.lo  -MMD -MF kernel/filter.dep -MT kernel/filter.lo
+-include kernel/iterator.dep
+kernel/iterator.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/iterator.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/iterator.c -o kernel/iterator.lo  -MMD -MF kernel/iterator.dep -MT kernel/iterator.lo
+-include kernel/time.dep
+kernel/time.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/time.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/time.c -o kernel/time.lo  -MMD -MF kernel/time.dep -MT kernel/time.lo
+-include kernel/exit.dep
+kernel/exit.lo: /Users/hello/Projects/php-extensions/utils/ext/kernel/exit.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/kernel/exit.c -o kernel/exit.lo  -MMD -MF kernel/exit.dep -MT kernel/exit.lo
+-include utils/encoder.dep
+utils/encoder.lo: /Users/hello/Projects/php-extensions/utils/ext/utils/encoder.zep.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/utils/encoder.zep.c -o utils/encoder.lo  -MMD -MF utils/encoder.dep -MT utils/encoder.lo
+-include utils/greeting.dep
+utils/greeting.lo: /Users/hello/Projects/php-extensions/utils/ext/utils/greeting.zep.c
+	$(LIBTOOL) --mode=compile $(CC) -I. -I/Users/hello/Projects/php-extensions/utils/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)   -DZEND_COMPILE_DL_EXT=1 -c /Users/hello/Projects/php-extensions/utils/ext/utils/greeting.zep.c -o utils/greeting.lo  -MMD -MF utils/greeting.dep -MT utils/greeting.lo
+$(phplibdir)/utils.la: ./utils.la
+	$(LIBTOOL) --mode=install cp ./utils.la $(phplibdir)
+
+./utils.la: $(shared_objects_utils) $(UTILS_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) -shared $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS)  -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_utils) $(UTILS_SHARED_LIBADD)
+
